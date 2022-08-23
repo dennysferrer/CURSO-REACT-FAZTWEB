@@ -4,6 +4,7 @@ import { Greeting, UserCard } from "./Greeting";
 import { Button } from "./Button";
 import { TaskCard } from "./Task";
 import { Saludar } from "./Saludar";
+import { Posts } from "./Posts";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -37,11 +38,25 @@ root.render(
 
     {/* <Button text='Click-me'/>
     <Button text='Pay'/>
-    <Button text={"Hola mundo"} name='Dennys Ferrer'/> */}
+    <Button text={"Hola mundo"} name='Dennys Ferrer'/>
+
+    <input onChange={function(e){
+      console.log(e.target.value);
+    }}></input>
+
+    <form onSubmit={(e)=>{
+      e.preventDefault();
+      console.log("Enviando formulario ...");
+    }}>
+      <h1>Formulario</h1>
+      <button>Boton</button>
+    </form> */}
 
     {/* <TaskCard ready={false}/> */}
 
-    <Saludar/>
+    {/* <Saludar/> */}
+
+    <Posts/>
 
   </>
 );
